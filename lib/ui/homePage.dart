@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
           "https://api.giphy.com/v1/gifs/trending?api_key=5UUgUlP0EBLQa31ps3TJ8vs2Bx9qSm2C&limit=24&rating=g");
     } else {
       response = await http.get(
-          "https://api.giphy.com/v1/gifs/search?api_key=5UUgUlP0EBLQa31ps3TJ8vs2Bx9qSm2C&q=$_search&limit=23&offset=$_offset&rating=g&lang=en");
+          "https://api.giphy.com/v1/gifs/search?api_key=5UUgUlP0EBLQa31ps3TJ8vs2Bx9qSm2C&q=$_search&limit=23&offset=$_offset&rating=g&lang=pt");
     }
     return json.decode(response.body);
   }
